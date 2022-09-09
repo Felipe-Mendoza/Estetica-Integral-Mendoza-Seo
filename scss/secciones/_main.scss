@@ -1,0 +1,63 @@
+.main{
+    background-color: $fondoMain;
+    grid-area: main;
+    .banner{
+        img{
+            display: flex;
+            width: 100%;
+            height: 375px;
+
+        }
+        .textoBanner{
+         @extend %estiloTextoBanner;
+
+        }
+
+    }
+    .cintillo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: $fondeCintillo;
+        text-align: center;
+        color: $textoBlaco;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 50px;
+        font-weight: lighter;
+        font-family: $tipo;
+        animation-name: cintillo;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+
+    }
+    .gridVideos{
+       
+        display: flex;
+        flex-wrap: wrap;
+        
+        justify-items: center;
+        justify-content: space-around;
+             iframe{
+                width: 100%;
+            }
+            h2{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                font-size: 21px;
+                font-weight: bold;
+                background: $fondoH2;
+                color: $textoVino;
+                text-align: center;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                margin-bottom: 10px;
+
+            }
+        }
+    }
+
+      
